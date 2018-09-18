@@ -3,7 +3,7 @@ version: 2.0
 jobs:
   build:
     docker:
-      - image: circleci/node:8.9.4
+      - image: node:8.9.4
     steps:
       - run:
           name: The First step
