@@ -5,11 +5,7 @@ jobs:
     docker:
       - image: node:8.9.4
     steps:
-      - run:
-          name: The First step
-          command: |
-            echo 'Hello World!'
-            echo 'This is the delivery pipeline'
+      - run: echo 'Hello World!'; echo 'This is the delivery pipeline'
       - run:
           name: Step to print the node version
           command: |
