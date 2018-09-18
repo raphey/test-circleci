@@ -13,4 +13,4 @@ jobs:
       - run:
           name: Step to print the node version
           command: |
-            echo 'gonna print some stuff'
+            npm -v
