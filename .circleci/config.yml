@@ -3,8 +3,9 @@ version: 2.0
 jobs:
   build:
     docker:
-      - image: node:8.9.4
+      - image: circleci/node:8.9.4
     steps:
+      - setup_remote_docker
       - run: echo 'Hello World!'; echo 'This is the delivery pipeline'
       - run:
           name: Step to print the node version
