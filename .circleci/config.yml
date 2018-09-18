@@ -5,8 +5,7 @@ jobs:
     docker:
       - image: alpine:3.7
     steps:
-      -checkout
-      -run:
+      - run:
           name: The First step
           command: |
             echo 'Hello World!'
