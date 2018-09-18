@@ -14,3 +14,4 @@ jobs:
           name: Step to print the node version
           command: |
             npm -v
+            echo 'yay, printed node version'
