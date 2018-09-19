@@ -6,9 +6,10 @@ jobs:
       - image: circleci/node:8.9.4
     steps:
       - setup_remote_docker
-      - run: echo 'Hello World!'; echo 'This is the delivery pipeline'
+      - run: echo 'Hello World!'; echo 'This is the delivery pipeline'; $MY_VAR='hiya'
       - run:
           name: Step to print the node version
           command: |
             node -v
             echo 'yay, printed node version'
+            echo '$MY_VAR'
