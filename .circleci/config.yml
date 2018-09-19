@@ -6,7 +6,7 @@ jobs:
       - image: circleci/node:8.9.4
     steps:
       - setup_remote_docker
-      - run: echo 'Hello World!'; echo 'This is the delivery pipeline'; MY_VAR='hiya'; echo $MY_VAR
+      - run: echo 'Hello World!'; echo 'This is the delivery pipeline'; echo 'export MY_VAR="hiya"' >> $BASH_ENV; echo $MY_VAR
       - run:
           name: Step to print the node version
           command: |
